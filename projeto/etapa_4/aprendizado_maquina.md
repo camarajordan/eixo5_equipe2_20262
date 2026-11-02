@@ -1,5 +1,9 @@
 # 4. ETAPA 4 —  MODELAGEM E PREVISÃO DE CARGA ELÉTRICA
 
+
+**Código em:**
+|[modelo python](modelo2.py)|
+
 ## 1.1. Base de dados
 
 A modelagem utilizou os dados da tabela `gold_fato_carga`, consultada no Amazon Athena. A base contempla o período de janeiro de 2016 a dezembro de 2024, com 13.152 registros diários distribuídos entre os quatro subsistemas.
@@ -143,7 +147,7 @@ Ao final da etapa, foram obtidos quatro modelos de regressão, uma avaliação c
 
 A comparação evidenciou que modelos mais simples podem apresentar resultados competitivos e que o desempenho varia entre os subsistemas. Os resultados também apontaram oportunidades de melhoria, principalmente na representação do crescimento recente da carga e na inclusão de novas variáveis explicativas.
 
-![Resultados_Nordeste](imagens/resultado_nordeste.png)
+![Resultados_Nordeste](imagens/resultado%20nordeste.png)
 ![Resultados_Nordeste](imagens/resultado%20norte.png)
 ![Resultados_Nordeste](imagens/resultado%20sudeste_centro-oeste.png)
 ![Resultados_Nordeste](imagens/resultado%20sul.png)
