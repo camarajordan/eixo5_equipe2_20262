@@ -1,0 +1,73 @@
+{
+  "modelo": "Gradient Boosting (HistGradientBoostingRegressor + log)",
+  "melhores_hiperparametros": {
+    "learning_rate": 0.03,
+    "max_iter": 400,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 10
+  },
+  "mape_validacao_2023_%": 3.5705144179963746,
+  "teste": {
+    "MAE": 424.73931385379296,
+    "RMSE": 691.1831032745898,
+    "R2": 0.9977641833806303,
+    "MAPE_%": 2.1967610153948613
+  },
+  "treino": {
+    "MAE": 252.87083735448675,
+    "RMSE": 424.40021647910845,
+    "R2": 0.9988889385137815,
+    "MAPE_%": 1.56722147171852
+  },
+  "mape_subsistema": {
+    "SE": 1.9761,
+    "S": 2.9916,
+    "NE": 1.856,
+    "N": 1.9634
+  },
+  "ablacao": {
+    "Completo": {
+      "MAE": 424.7393,
+      "RMSE": 691.1831,
+      "R2": 0.9978,
+      "MAPE_%": 2.1968
+    },
+    "Sem variáveis climáticas (H1)": {
+      "MAE": 570.9007,
+      "RMSE": 952.1782,
+      "R2": 0.9958,
+      "MAPE_%": 2.674
+    },
+    "Sem defasagens da carga (H3)": {
+      "MAE": 632.0588,
+      "RMSE": 859.0861,
+      "R2": 0.9965,
+      "MAPE_%": 3.7862
+    },
+    "Sem calendário (H3)": {
+      "MAE": 783.729,
+      "RMSE": 1280.5409,
+      "R2": 0.9923,
+      "MAPE_%": 3.6729
+    }
+  },
+  "importancia_permutacao_pp": {
+    "id_subsistema": 41.9734,
+    "carga_lag_1": 19.0326,
+    "carga_lag_7": 5.3254,
+    "dia_semana": 3.2427,
+    "carga_media_7d": 0.986,
+    "temp_max": 0.5144,
+    "feriado": 0.3305,
+    "temp_media": 0.2888,
+    "dia_ano": 0.0615,
+    "temp_min": 0.0283,
+    "radiacao_global": 0.0235,
+    "mes": 0.0174,
+    "vento_vel_media": 0.0122,
+    "temp_media_lag_1": 0.0061,
+    "precipitacao_total": 0.0041,
+    "tendencia": 0.0,
+    "temp_media_3d": -0.0026
+  }
+}

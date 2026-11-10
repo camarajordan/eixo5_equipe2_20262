@@ -1,0 +1,11 @@
+# Ignora datasets locais, credenciais e caches Python
+data/
+.env
+.env.*
+*.csv
+*.parquet
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store

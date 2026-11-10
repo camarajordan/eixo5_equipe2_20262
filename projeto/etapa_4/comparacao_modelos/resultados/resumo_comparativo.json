@@ -1,0 +1,77 @@
+{
+  "comparacao_global_2024": {
+    "Regressão Linear (clima, sem lags)": {
+      "MAE": 1793.3769,
+      "RMSE": 2899.5714,
+      "R2": 0.9607,
+      "MAPE_%": 8.1935
+    },
+    "Baseline Ingênuo (carga_lag_7)": {
+      "MAE": 961.8043,
+      "RMSE": 1684.2011,
+      "R2": 0.9867,
+      "MAPE_%": 4.477
+    },
+    "Random Forest": {
+      "MAE": 577.2643,
+      "RMSE": 908.3928,
+      "R2": 0.9961,
+      "MAPE_%": 3.0875
+    },
+    "Regressão Linear + Lags (log)": {
+      "MAE": 499.0555,
+      "RMSE": 769.9693,
+      "R2": 0.9972,
+      "MAPE_%": 2.7715
+    },
+    "Gradient Boosting": {
+      "MAE": 424.7393,
+      "RMSE": 691.1831,
+      "R2": 0.9978,
+      "MAPE_%": 2.1968
+    }
+  },
+  "mape_por_subsistema_2024": {
+    "SE": {
+      "Regressão Linear (sem lags)": 10.3539,
+      "Regressão Linear + Lags": 2.1654,
+      "Ingênuo (lag 7)": 5.1136,
+      "Random Forest": 2.5914,
+      "Gradient Boosting": 1.9761
+    },
+    "S": {
+      "Regressão Linear (sem lags)": 7.1545,
+      "Regressão Linear + Lags": 4.0763,
+      "Ingênuo (lag 7)": 7.2341,
+      "Random Forest": 4.1601,
+      "Gradient Boosting": 2.9916
+    },
+    "NE": {
+      "Regressão Linear (sem lags)": 5.1643,
+      "Regressão Linear + Lags": 2.0396,
+      "Ingênuo (lag 7)": 2.9958,
+      "Random Forest": 2.1425,
+      "Gradient Boosting": 1.856
+    },
+    "N": {
+      "Regressão Linear (sem lags)": 10.1011,
+      "Regressão Linear + Lags": 2.8049,
+      "Ingênuo (lag 7)": 2.5645,
+      "Random Forest": 3.4561,
+      "Gradient Boosting": 1.9634
+    }
+  },
+  "hiperparametros": {
+    "gradient_boosting": {
+      "learning_rate": 0.03,
+      "max_iter": 400,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 10
+    },
+    "random_forest": {
+      "n_estimators": 400,
+      "max_features": 0.7,
+      "min_samples_leaf": 5
+    }
+  }
+}

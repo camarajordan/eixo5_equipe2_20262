@@ -1,0 +1,72 @@
+{
+  "modelo": "Random Forest (RandomForestRegressor + log)",
+  "melhores_hiperparametros": {
+    "n_estimators": 400,
+    "max_features": 0.7,
+    "min_samples_leaf": 5
+  },
+  "mape_validacao_2023_%": 3.189675676468346,
+  "teste": {
+    "MAE": 577.2642930861177,
+    "RMSE": 908.3927769743659,
+    "R2": 0.9961381331232325,
+    "MAPE_%": 3.0875436559902214
+  },
+  "treino": {
+    "MAE": 191.98643158853994,
+    "RMSE": 366.6844177719881,
+    "R2": 0.9991705851437487,
+    "MAPE_%": 1.1689835006055371
+  },
+  "mape_subsistema": {
+    "SE": 2.5914,
+    "S": 4.1601,
+    "NE": 2.1425,
+    "N": 3.4561
+  },
+  "ablacao": {
+    "Completo": {
+      "MAE": 577.2643,
+      "RMSE": 908.3928,
+      "R2": 0.9961,
+      "MAPE_%": 3.0875
+    },
+    "Sem variáveis climáticas (H1)": {
+      "MAE": 543.6478,
+      "RMSE": 935.2655,
+      "R2": 0.9959,
+      "MAPE_%": 2.6657
+    },
+    "Sem defasagens da carga (H3)": {
+      "MAE": 1024.5339,
+      "RMSE": 1474.9718,
+      "R2": 0.9898,
+      "MAPE_%": 5.4144
+    },
+    "Sem calendário (H3)": {
+      "MAE": 801.6835,
+      "RMSE": 1260.3775,
+      "R2": 0.9926,
+      "MAPE_%": 3.9459
+    }
+  },
+  "importancia_permutacao_pp": {
+    "carga_media_7d": 21.2326,
+    "carga_lag_1": 12.0608,
+    "carga_lag_7": 11.9942,
+    "id_subsistema": 11.0547,
+    "dia_semana": 2.2573,
+    "feriado": 0.1192,
+    "radiacao_global": 0.0112,
+    "precipitacao_total": 0.0052,
+    "tendencia": -0.0,
+    "vento_vel_media": -0.0065,
+    "mes": -0.0068,
+    "dia_ano": -0.0093,
+    "temp_media_3d": -0.0115,
+    "temp_media_lag_1": -0.024,
+    "temp_media": -0.0286,
+    "temp_min": -0.0406,
+    "temp_max": -0.041
+  }
+}
